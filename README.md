@@ -15,7 +15,8 @@ A Few Notes:
 2) I started building a database structure for future growth, but did not implement it yet along with a transaction logging routine
 3) This system was stright forward - multicore access was not necessary at this point, but this would be implemented in future versions
 4) GUI programming is not my forte so I utilize either code generators or other people's code - the requirement to use internal functions
-  only forced the seletion of TK for the GUI which I had to learn for this exercise.
+  only forced the seletion of TK for the GUI which I had to learn for this exercise.  I also need to investigate how to add unittesting
+  to TK GUI programming - note that there is no unittests for all the GUI.
   
   
 Note:  I will be working on edge cases for the code and continue to push updates - there is always the tradeoff of "good enough" vs "perfect"
