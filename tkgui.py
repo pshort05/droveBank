@@ -15,6 +15,7 @@
 from dataBase import dataBase
 from configSettings import configurationSettings
 from account import account
+from pathlib import Path
 
 from tkinter import messagebox as msg
 import tkinter
@@ -268,8 +269,15 @@ class myGUI(tkinter.Frame):
                 loginText = "Logged in as " + self.name
                 self.updateStatus(loginText)
 
-        # Load prior accounts
-
+        # Load prior accounts - limiting this to 100 accounts for now, however the way it's designed the only limit is memory
+        for i in range(1, 100):
+            tmpFileName = self.name + str(i)
+            tmpFile = Path(tmpFileName)
+            if tmpFile.is_file():
+                act = account(0)
+                act.loadAccounts(tmpFileName, i)
+                self.accountList.append(act)
+                self.displayAccounts()
 
         # Remove the login widgets
         self.lent1.grid_forget()
