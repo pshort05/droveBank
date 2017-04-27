@@ -1,0 +1,23 @@
+DroveBank
+=========
+Our drove of piggies have started a bank to store their cash. Design and implement a bank accounting system which tracks
+each pig's cash account. You are free to choose whatever client interface you want, as long as the system supports
+(at least) the following operations:
+
+* open an account;
+* deposit to an account;
+* withdraw from an account;
+* transfer money between two accounts.
+
+The pigpen only has a basic, commodity desktop computer (say, an 8-core Intel i5 with spinning hard disks and 8GB RAM
+running Linux.) Also, the pigpen has terrible IT problems, due to all the mud. The pigs are very worried about putting
+their money into the bank's computer, they don't ever want to lose their money due to power failure. Design the system
+to be resilient to power failure; you may assume that the hardware will survive the mud. The piggies will want to know
+what you can promise about their money.
+
+The piggies are highly suspicious of outside software, so the entire system should be written from scratch, using
+whatever basic libraries your chosen language has built-in.
+
+If your project is successful, we will want to expand it to our multinational pigpen conglomerate, so pay attention to
+problems of scale. Bonus points if you can design a system to survive hardware loss, or exploits multiple cores.
+
