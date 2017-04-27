@@ -52,7 +52,10 @@ class account():
         with open(name, 'wb') as handle:
             pickle.dump(self.balance, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-    def loadAccounts(self, name):
+    def loadAccounts(self, name, number):
         with open(name, 'rb') as handle:
             self.balance = pickle.load(handle)
+        self.accountNumber=number
+        if number > account.nextAcctNumber:
+            account.nextAcctNumber = number+1
 
