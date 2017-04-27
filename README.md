@@ -17,3 +17,5 @@ A Few Notes:
 4) GUI programming is not my forte so I utilize either code generators or other people's code - the requirement to use internal functions
   only forced the seletion of TK for the GUI which I had to learn for this exercise.
   
+  
+Note:  I will be working on edge cases for the code and continue to push updates - there is always the tradeoff of "good enough" vs "perfect"
